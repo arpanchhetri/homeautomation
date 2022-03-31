@@ -27,7 +27,7 @@ message "Loading environment variables"
  . "$REPO_ROOT"/setup/.env
 
 installFlux() {
-  message "installing fluxv2"
+  message "Bootstrapping Flux"
   flux check --pre > /dev/null
   FLUX_PRE=$?
   if [ $FLUX_PRE != 0 ]; then
@@ -40,9 +40,9 @@ installFlux() {
     exit 1
   fi
   flux bootstrap github \
-    --owner=arpanchhetri \
-    --repository=homeautomation \
-    --branch main \
+    --owner="$OWNER" \
+    --repository="$REPO" \
+    --branch "$BRANCH" \
     --private=false \
     --personal \
     --network-policy=false \
