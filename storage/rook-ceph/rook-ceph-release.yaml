@@ -246,7 +246,7 @@ spec:
     image: rook/ceph:v1.9.6
       pullPolicy: IfNotPresent
       repository: rook/ceph
-      tag: VERSION
+      tag: v1.9.6
     logLevel: INFO
     monitoring:
       enabled: false
