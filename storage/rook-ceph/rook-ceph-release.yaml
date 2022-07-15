@@ -243,10 +243,10 @@ spec:
     enableOBCWatchOperatorNamespace: true
     enableSelinuxRelabeling: true
     hostpathRequiresPrivileged: false
-    image: rook/ceph:v1.9.6
+    image:
       pullPolicy: IfNotPresent
       repository: rook/ceph
-      tag: v1.9.6
+      tag: v1.9.7
     logLevel: INFO
     monitoring:
       enabled: false
