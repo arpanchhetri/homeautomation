@@ -246,6 +246,7 @@ spec:
     image:
       pullPolicy: IfNotPresent
       repository: rook/ceph
+      tag: master
     logLevel: INFO
     monitoring:
       enabled: false
